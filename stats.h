@@ -9,32 +9,79 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h
+ * 
+ * Set of functions that can analyze an array of unsigned char data items, report analytics on the maximum, 
+ * minimum, mean, and median of the data set, and reorder this data set from large to small.
  *
- * <Add Extended Description Here>
- *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Thibault Etienne
+ * @date 20/11/2024
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/**
+ * A function that prints the statistics of an array including minimum, maximum, mean, and median.
+ *
+ * @param int * ptr: Pointer to an array
+ */
+void print_statistics(int * ptr);
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * Given an array of data and a length, prints the array to the screen
  *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @param int * ptr: Pointer to an array
+ * @param int size: Size of the array
  */
+void print_array(int * ptr, int size);
 
+/**
+ * Given an array of data and a length, returns the median value
+ *
+ * @param int * ptr: Pointer to an array
+ * @param int size: Size of the array
+ *
+ * @return Median of the array elements
+ */
+int find_median(int * ptr, int size);
+
+/**
+ * Given an array of data and a length, returns the mean
+ *
+ * @param int * ptr: Pointer to an array
+ * @param int size: Size of the array
+ *
+ * @return Mean of the array elements
+ */
+int find_mean(int * ptr, int size);
+
+/**
+ * Given an array of data and a length, returns the maximum
+ *
+ * @param int * ptr: Pointer to an array
+ * @param int size: Size of the array
+ *
+ * @return Maximum of the array elements
+ */
+int find_maximum(int * ptr, int size);
+
+/**
+ * Given an array of data and a length, returns the minimum
+ *
+ * @param int * ptr: Pointer to an array
+ * @param int size: Size of the array
+ *
+ * @return Minimum of the array elements
+ */
+int find_minimum(int * ptr, int size);
+ 
+/**
+ * Given an array of data and a length, sorts the array from largest to smallest.  
+ *
+ * @param int * ptr: Pointer to an array
+ * @param int size: Size of the array
+ */
+void sort_array(int * ptr, int size);
 
 #endif /* __STATS_H__ */

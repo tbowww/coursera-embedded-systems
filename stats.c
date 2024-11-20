@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * 
+ * Set of functions that can analyze an array of unsigned char data items, report analytics on the maximum, 
+ * minimum, mean, and median of the data set, and reorder this data set from large to small.
  *
- * <Add Extended Description Here>
- *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Thibault Etienne
+ * @date 20/11/2024
  *
  */
 
@@ -40,4 +40,10 @@ void main() {
 
 }
 
-/* Add other Implementation File Code Here */
+void print_statistics(int * ptr) {}
+void print_array(int * ptr, int size) {}
+int find_median(int * ptr, int size) {}
+int find_mean(int * ptr, int size) {}
+int find_maximum(int * ptr, int size) {}
+int find_minimum(int * ptr, int size) {}
+void sort_array(int * ptr, int size) {}
