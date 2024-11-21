@@ -43,9 +43,9 @@ void print_array(unsigned char arr[], unsigned int size);
  * @param unsigned char arr[]: Array
  * @param int size: Size of the array
  *
- * @return Median of the array elements
+ * @return Median of the array elements, rounded to the nearest integer
  */
-double find_median(unsigned char arr[], unsigned int size);
+unsigned char find_median(unsigned char arr[], unsigned int size);
 
 /**
  * Given an array of data and a length, returns the mean
@@ -53,9 +53,9 @@ double find_median(unsigned char arr[], unsigned int size);
  * @param unsigned char arr[]: Array
  * @param int size: Size of the array
  *
- * @return Mean of the array elements
+ * @return Mean of the array elements, rounded to the nearest integer
  */
-double find_mean(unsigned char arr[], unsigned int size);
+unsigned char find_mean(unsigned char arr[], unsigned int size);
 
 /**
  * Given an array of data and a length, returns the maximum
