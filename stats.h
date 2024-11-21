@@ -24,64 +24,65 @@
 /**
  * A function that prints the statistics of an array including minimum, maximum, mean, and median.
  *
- * @param int * ptr: Pointer to an array
+ * @param unsigned char arr[]: Array
+ * @param int size: Size of the array
  */
-void print_statistics(int * ptr);
+void print_statistics(unsigned char arr[], unsigned int size);
 
 /**
  * Given an array of data and a length, prints the array to the screen
  *
- * @param int * ptr: Pointer to an array
+ * @param unsigned char arr[]: Array
  * @param int size: Size of the array
  */
-void print_array(int * ptr, int size);
+void print_array(unsigned char arr[], unsigned int size);
 
 /**
  * Given an array of data and a length, returns the median value
  *
- * @param int * ptr: Pointer to an array
+ * @param unsigned char arr[]: Array
  * @param int size: Size of the array
  *
  * @return Median of the array elements
  */
-int find_median(int * ptr, int size);
+double find_median(unsigned char arr[], unsigned int size);
 
 /**
  * Given an array of data and a length, returns the mean
  *
- * @param int * ptr: Pointer to an array
+ * @param unsigned char arr[]: Array
  * @param int size: Size of the array
  *
  * @return Mean of the array elements
  */
-int find_mean(int * ptr, int size);
+double find_mean(unsigned char arr[], unsigned int size);
 
 /**
  * Given an array of data and a length, returns the maximum
  *
- * @param int * ptr: Pointer to an array
+ * @param unsigned char arr[]: Array
  * @param int size: Size of the array
  *
  * @return Maximum of the array elements
  */
-int find_maximum(int * ptr, int size);
+unsigned char find_maximum(unsigned char arr[], unsigned int size);
 
 /**
  * Given an array of data and a length, returns the minimum
  *
- * @param int * ptr: Pointer to an array
+ * @param unsigned char arr[]: Array
  * @param int size: Size of the array
  *
  * @return Minimum of the array elements
  */
-int find_minimum(int * ptr, int size);
+unsigned char find_minimum(unsigned char arr[], unsigned int size);
  
 /**
  * Given an array of data and a length, sorts the array from largest to smallest.  
  *
- * @param int * ptr: Pointer to an array
+ * @param unsigned char arr[]: Array
  * @param int size: Size of the array
  */
-void sort_array(int * ptr, int size);
+void sort_array(unsigned char arr[], unsigned int size);
 
 #endif /* __STATS_H__ */
