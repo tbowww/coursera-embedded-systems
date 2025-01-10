@@ -67,7 +67,8 @@ OBJS = $(SOURCES:.c=.o)
 	$(CC) $< $(CPPFLAGS) $(INCLUDES) -E > $@
 
 %.asm : %.c
-	$(CC) -c $< $(CPPFLAGS) $(CFLAGS) $(INCLUDES) -S $@
+	$(CC) -c $(CPPFLAGS) $(CFLAGS) $(INCLUDES) -S $< -o $@
+
 
 %.o : %.c
 	$(CC) -c $< $(CPPFLAGS) $(CFLAGS) $(INCLUDES) -o $@
