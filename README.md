@@ -7,4 +7,4 @@
 
 
 ### This is a repository created to hold my implementation for the "Introductio
-### to Embedded Software and Development Environments" course from University of Colorado" 
+### to Embedded Software and Development Environments" course from University of Colorado 
