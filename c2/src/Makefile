@@ -78,11 +78,14 @@ compile-all: $(OBJS)
 	$(CC) -c $^ $(CPPFLAGS) $(CFLAGS) $(INCLUDES) -o $@ 
 
 .PHONY: build
-build: ./c1m2.out
-
-./c1m2.out : $(OBJS)
-	$(CC) $^ $(CPPFLAGS) $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o c1m2.out 
+build: c1m2.out
 	$(SIZE) -Atd $@
+
+c1m2.out : $(OBJS)
+	$(CC) $^ $(CPPFLAGS) $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o c1m2.out 
+
+c1m2.asm : c1m2.out
+	$(OBJDUMP) -d $^ > $@	
 
 .PHONY: clean
 clean:
