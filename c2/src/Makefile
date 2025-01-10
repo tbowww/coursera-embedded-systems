@@ -69,7 +69,6 @@ OBJS = $(SOURCES:.c=.o)
 %.asm : %.c
 	$(CC) -c $(CPPFLAGS) $(CFLAGS) $(INCLUDES) -S $< -o $@
 
-
 %.o : %.c
 	$(CC) -c $< $(CPPFLAGS) $(CFLAGS) $(INCLUDES) -o $@
 
@@ -79,7 +78,7 @@ compile-all: $(OBJS)
 
 .PHONY: build
 build: c1m2.out
-	$(SIZE) -Atd $@
+	$(SIZE) -Atd $^
 
 c1m2.out : $(OBJS)
 	$(CC) $^ $(CPPFLAGS) $(CFLAGS) $(INCLUDES) $(LDFLAGS) -o c1m2.out 
